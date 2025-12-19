@@ -9,8 +9,8 @@
 </head>
 <body>
   <header>
-    <div class="nav">
-      <div style="font-weight:700;">Che Liu</div>
+    <div class="topbar">
+      <div class="brand">Che Liu</div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#news">News</a>
@@ -23,56 +23,56 @@
   </header>
 
   <main>
-    <section class="hero" id="about">
-      <div class="avatar">CL</div>
+    <section id="about" class="intro">
       <div>
-        <h1>Hello, I'm Che Liu</h1>
-        <p class="subtitle">Researcher in computer vision / multimodal AI. Passionate about building reliable models for visual understanding and generation.</p>
-        <div class="meta">
-          <span class="pill">Looking for collaborations</span>
-          <span class="badge">Location: Toronto / Remote</span>
+        <h1>Che Liu</h1>
+        <p class="tagline">Researcher in computer vision & multimodal AI</p>
+        <p class="summary">
+          I work on reliable visual understanding and generation, with interests spanning multimodal LLMs, video understanding, and diffusion-based image/video editing. This site is modeled after a clean academic homepage style similar to <a href="https://cs.uwaterloo.ca/~w2ren/" target="_blank" rel="noopener">Weiming Ren</a>.
+        </p>
+        <div class="link-row">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <span>·</span>
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <a href="assets/files/cv.pdf">CV</a>
         </div>
-        <div class="meta" style="margin-top:8px;">
-          <a href="mailto:you@example.com">you@example.com</a> ·
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a> ·
-          <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="#contact">CV</a>
-        </div>
+      </div>
+      <div class="intro-photo">
+        <div class="profile-pic">CL</div>
       </div>
     </section>
 
     <section id="news">
       <h2>News</h2>
-      <div class="list">
-        <div class="list-item">
-          <div><span class="pill">Dec 2025</span> Launched my new academic homepage (this site) inspired by <a href="https://cs.uwaterloo.ca/~w2ren/" target="_blank" rel="noopener">Weiming Ren</a>.</div>
-        </div>
-        <div class="list-item">
-          <div><span class="pill">Sep 2025</span> Paper accepted to <strong>[Conference Name]</strong>. Title placeholder—update with your latest work.</div>
-        </div>
-        <div class="list-item">
-          <div><span class="pill">Jun 2025</span> Started internship at <strong>[Organization]</strong> focusing on multimodal LLMs.</div>
-        </div>
+      <div class="card">
+        <ul class="item-list">
+          <li><span class="date">Dec 2025</span> Launched this new homepage inspired by <a href="https://cs.uwaterloo.ca/~w2ren/" target="_blank" rel="noopener">w2ren</a>’s layout.</li>
+          <li><span class="date">Sep 2025</span> Paper accepted to <strong>[Conference Name]</strong> — update with your latest work.</li>
+          <li><span class="date">Jun 2025</span> Started internship at <strong>[Organization]</strong> focusing on multimodal LLMs.</li>
+        </ul>
       </div>
     </section>
 
     <section id="publications">
       <h2>Selected Publications</h2>
-      <div class="list">
-        <div class="list-item">
-          <div><strong>Title Placeholder for Your Latest Paper</strong></div>
-          <div class="muted">Author1, Author2, Che Liu, Author4</div>
-          <div class="muted">Conference/Journal, 2025 · <a href="#">PDF</a> · <a href="#">Project</a> · <a href="#">Code</a></div>
+      <div class="card">
+        <div class="pub">
+          <div class="pub-title">Title Placeholder for Your Latest Paper</div>
+          <div class="pub-authors">Author1, Author2, <strong>Che Liu</strong>, Author4</div>
+          <div class="pub-meta">Conference/Journal, 2025 · <a href="#">PDF</a> · <a href="#">Project</a> · <a href="#">Code</a></div>
         </div>
-        <div class="list-item">
-          <div><strong>Another Paper Title Goes Here</strong></div>
-          <div class="muted">Che Liu, Collaborator1, Collaborator2</div>
-          <div class="muted">ArXiv preprint, 2024 · <a href="#">PDF</a> · <a href="#">arXiv</a></div>
+        <div class="pub">
+          <div class="pub-title">Another Paper Title Goes Here</div>
+          <div class="pub-authors"><strong>Che Liu</strong>, Collaborator1, Collaborator2</div>
+          <div class="pub-meta">arXiv preprint, 2024 · <a href="#">PDF</a> · <a href="#">arXiv</a></div>
         </div>
-        <div class="list-item">
-          <div><strong>Older or Notable Publication Title</strong></div>
-          <div class="muted">Author list</div>
-          <div class="muted">Venue, Year · <a href="#">PDF</a></div>
+        <div class="pub">
+          <div class="pub-title">Older or Notable Publication Title</div>
+          <div class="pub-authors">Author list</div>
+          <div class="pub-meta">Venue, Year · <a href="#">PDF</a></div>
         </div>
       </div>
     </section>
@@ -81,14 +81,14 @@
       <h2>Experience</h2>
       <div class="grid-two">
         <div class="card">
-          <div style="font-weight:600;">Role @ Organization</div>
-          <div class="muted">Location · Dates</div>
-          <div style="margin-top:6px;">Short summary of what you did, focusing on impact and research themes.</div>
+          <div class="pub-title">Research Scientist Intern @ [Organization]</div>
+          <div class="pub-authors">Location · Jun 2025 – Nov 2025</div>
+          <div class="pub-meta">Worked on multimodal LLMs / video understanding.</div>
         </div>
         <div class="card">
-          <div style="font-weight:600;">Research Intern @ Organization</div>
-          <div class="muted">Location · Dates</div>
-          <div style="margin-top:6px;">Worked on [project], collaborating with [team/mentor].</div>
+          <div class="pub-title">Research Intern @ [Organization]</div>
+          <div class="pub-authors">Location · Sep 2024 – Mar 2025</div>
+          <div class="pub-meta">Projects on generative models and evaluation.</div>
         </div>
       </div>
     </section>
@@ -97,33 +97,31 @@
       <h2>Education</h2>
       <div class="grid-two">
         <div class="card">
-          <div style="font-weight:600;">Ph.D. in Computer Science</div>
-          <div class="muted">University · 2023 – Present</div>
-          <div style="margin-top:6px;">Advisor: [Name]. Research in multimodal learning.</div>
+          <div class="pub-title">Ph.D. in Computer Science</div>
+          <div class="pub-authors">University · 2023 – Present</div>
+          <div class="pub-meta">Advisor: [Name] · Focus on multimodal learning.</div>
         </div>
         <div class="card">
-          <div style="font-weight:600;">M.Sc. in [Field]</div>
-          <div class="muted">University · 2021 – 2023</div>
-          <div style="margin-top:6px;">Thesis on [topic].</div>
+          <div class="pub-title">M.Sc. in Applied Computing</div>
+          <div class="pub-authors">University · 2021 – 2022</div>
+          <div class="pub-meta">Thesis on vision-language methods.</div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact & Links</h2>
-      <div class="list">
-        <div class="list-item">
-          <div>Email: <a href="mailto:you@example.com">you@example.com</a></div>
-          <div>Google Scholar: <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Profile</a></div>
-          <div>LinkedIn: <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">Profile</a></div>
-          <div>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></div>
-          <div>CV: <a href="assets/files/cv.pdf">Download</a></div>
-        </div>
+      <h2>Contact</h2>
+      <div class="card">
+        <div>Email: <a href="mailto:you@example.com">you@example.com</a></div>
+        <div>Google Scholar: <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Profile</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">Profile</a></div>
+        <div>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></div>
+        <div>CV: <a href="assets/files/cv.pdf">Download</a></div>
       </div>
     </section>
 
     <div class="footer">
-      © 2025 Che Liu. Built with plain HTML/CSS and deployed on GitHub Pages.
+      © 2025 Che Liu. Built with HTML/CSS and deployed on GitHub Pages.
     </div>
   </main>
 </body>

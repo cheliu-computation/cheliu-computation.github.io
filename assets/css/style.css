@@ -214,9 +214,9 @@ a:hover {
 }
 
 .logo-img-small {
-  width: 160px;
-  height: 96px;
-  padding: 8px;
+  width: 220px;
+  height: 144px;
+  padding: 8px 10px;
   border-radius: 12px;
   border: 1px solid var(--border);
   background: #f5f6fa;

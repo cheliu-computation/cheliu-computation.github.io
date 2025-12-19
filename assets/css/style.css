@@ -114,13 +114,8 @@ main {
   width: 160px;
   height: 160px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 32px;
-  color: #1e3a8a;
+  background: #eef2ff;
+  object-fit: cover;
   border: 1px solid var(--border);
 }
 

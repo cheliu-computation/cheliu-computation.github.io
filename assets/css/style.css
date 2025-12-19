@@ -202,6 +202,16 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
+.logo-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: var(--shadow);
+  object-fit: contain;
+}
+
 .logo-badge small {
   display: block;
   font-size: 10px;

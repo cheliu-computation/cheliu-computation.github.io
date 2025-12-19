@@ -3,159 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Che Liu | Academic Homepage</title>
+  <title>Che Liu</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <meta name="description" content="Academic homepage of Che Liu">
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <div class="brand">Che Liu</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="about" class="intro">
-      <div>
-        <h1>Che Liu</h1>
-        <p class="tagline">Researcher in multimodal learning (vision, audio, language)</p>
-        <p class="summary">
-          I focus on multimodal understanding and unified models for perception and generation across 2D/3D vision, video, audio, language, and time-series data. My work combines large-scale pre-training with reinforcement learning to enable structured cross-modal reasoning—aiming for scalable, generalizable systems for complex real-world tasks.
-        </p>
-        <div class="link-row">
-          <a href="mailto:che.liu21@imperial.ac.uk">che.liu21@imperial.ac.uk</a>
-          <span>·</span>
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
-          <span>·</span>
-          <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">LinkedIn</a>
-          <span>·</span>
-          <a href="https://github.com/cheliu-computation" target="_blank" rel="noopener">GitHub</a>
-          <span>·</span>
-          <a href="assets/files/cv.pdf">CV</a>
+  <section class="hero">
+    <div class="container">
+      <h1>Hello, I'm Che Liu</h1>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p>I am a researcher focusing on multimodal learning across 2D/3D vision, video, audio, language, and time-series data. I work on unified models for perception and generation, combining large-scale pretraining and RL for structured cross-modal reasoning.</p>
+          <p>
+            Email: che.liu21@imperial.ac.uk
+          </p>
+          <div class="button-row">
+            <a class="btn" href="assets/files/cv.pdf">CV</a>
+            <a class="btn" href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn" href="https://github.com/cheliu-computation" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="assets/img/profile.png" alt="Che Liu portrait" class="profile-pic">
         </div>
       </div>
-      <div class="intro-photo">
-        <img src="assets/img/profile.png" alt="Che Liu portrait" class="profile-pic" style="object-fit: cover; width: 160px; height: 160px; border-radius: 12px; border: 1px solid var(--border);">
-      </div>
-    </section>
 
-    <section id="news">
-      <h2>News</h2>
-      <div class="card">
-        <ul class="item-list">
-          <li><span class="date">Apr 2025</span> Visiting Researcher (Embodied VLM) @ X-humanoid.</li>
-          <li><span class="date">May 2025</span> Visiting Researcher (OmniLLM) @ StepFun.</li>
-          <li><span class="date">Nov 2024</span> Research Intern (Unified Multimodal Vision Pretraining) @ DAMO Academy.</li>
-          <li><span class="date">2024</span> Invited talks on Synthetic Data for Medical Multimodal Learning (AstraZeneca), Multimodal Medical AI (Stanford MedAI), ECG Multimodal Learning (PKU).</li>
-        </ul>
-      </div>
-    </section>
+      <h4 class="title" style="margin-top: 26px; margin-bottom: 6px; font-size: 20px;">News</h4>
+      <ul class="news-list">
+        <li><span class="news-date">Apr 2025</span> Visiting Researcher (Embodied VLM) @ X-humanoid.</li>
+        <li><span class="news-date">May 2025</span> Visiting Researcher (OmniLLM) @ StepFun.</li>
+        <li><span class="news-date">Nov 2024</span> Research Intern (Unified Multimodal Vision Pretraining) @ DAMO Academy.</li>
+        <li><span class="news-date">2024</span> Invited talks: Synthetic Data for Medical Multimodal Learning (AstraZeneca), Multimodal Medical AI (Stanford MedAI), ECG Multimodal Learning (PKU).</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="publications">
+  <div class="divider"></div>
+
+  <section class="section" id="publications">
+    <div class="container">
       <h2>Selected Publications</h2>
-      <div class="card">
-        <div class="pub">
-          <div class="pub-title">Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence</div>
-          <div class="pub-authors"><strong>Che Liu</strong>, X-Humanoid</div>
-          <div class="pub-meta">Technical Report, 2025</div>
+      <p class="pub-meta" style="margin-bottom: 14px;">* indicates equal contribution. More on Google Scholar.</p>
+      <div class="pub-grid">
+        <div class="pub-card">
+          <img class="pub-thumb" src="assets/img/profile.png" alt="Pelican-VL">
+          <div>
+            <h3 class="pub-title">Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence</h3>
+            <p class="pub-authors"><strong>Che Liu</strong>, X-humanoid</p>
+            <p class="pub-meta">Technical Report, 2025</p>
+            <p class="pub-desc">Embodied VLM with unified capabilities across perception and action.</p>
+          </div>
         </div>
-        <div class="pub">
-          <div class="pub-title">Nexus-O: An Omni-Perceptive and Interactive Model for Language, Audio, and Vision</div>
-          <div class="pub-authors"><strong>Che Liu</strong>, et al.</div>
-          <div class="pub-meta">ACM Multimedia 2025</div>
+        <div class="pub-card">
+          <img class="pub-thumb" src="assets/img/profile.png" alt="Nexus-O">
+          <div>
+            <h3 class="pub-title">Nexus-O: An Omni-Perceptive and Interactive Model for Language, Audio, and Vision</h3>
+            <p class="pub-authors"><strong>Che Liu</strong>, et al.</p>
+            <p class="pub-meta">ACM Multimedia 2025</p>
+            <p class="pub-desc">Omni-modal understanding and interaction across audio-visual-language streams.</p>
+          </div>
         </div>
-        <div class="pub">
-          <div class="pub-title">Unified Visual Self-Supervised Pre-training Across Video, 2D, and 3D Vision</div>
-          <div class="pub-authors"><strong>Che Liu</strong>, DAMO Academy</div>
-          <div class="pub-meta">Technical Report</div>
+        <div class="pub-card">
+          <img class="pub-thumb" src="assets/img/profile.png" alt="Unified Visual Pretraining">
+          <div>
+            <h3 class="pub-title">Unified Visual Self-Supervised Pre-training Across Video, 2D, and 3D Vision</h3>
+            <p class="pub-authors"><strong>Che Liu</strong>, DAMO Academy</p>
+            <p class="pub-meta">Technical Report</p>
+            <p class="pub-desc">A single framework for 2D/3D/video self-supervised representation learning.</p>
+          </div>
         </div>
-        <div class="pub">
-          <div class="pub-title">Investigating Vision-Language Model Architectures for 3D Volume Understanding</div>
-          <div class="pub-authors"><strong>Che Liu</strong>, et al.</div>
-          <div class="pub-meta">ACL 2025 Findings</div>
+        <div class="pub-card">
+          <img class="pub-thumb" src="assets/img/profile.png" alt="3D VLM">
+          <div>
+            <h3 class="pub-title">Investigating Vision-Language Model Architectures for 3D Volume Understanding</h3>
+            <p class="pub-authors"><strong>Che Liu</strong>, et al.</p>
+            <p class="pub-meta">ACL 2025 Findings</p>
+            <p class="pub-desc">Architectures for medical 3D volume comprehension with vision-language models.</p>
+          </div>
         </div>
-        <div class="pub">
-          <div class="pub-title">Multimodal Time-Series Learning with Test-Time Enhancement</div>
-          <div class="pub-authors"><strong>Che Liu</strong>, et al.</div>
-          <div class="pub-meta">ICML 2024</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="grid-two">
-        <div class="card">
-          <div class="pub-title">Visiting Researcher — Embodied VLM, X-humanoid</div>
-          <div class="pub-authors">Remote · Apr 2025 – Present</div>
-          <div class="pub-meta">Leading VLM post-training with SFT + self-evolving RL on large-scale video data (3B–72B).</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">Visiting Researcher — OmniLLM, StepFun</div>
-          <div class="pub-authors">Remote · May 2025 – Present</div>
-          <div class="pub-meta">Audio-visual-language SFT/RL, data curation, and omni-capability benchmarks.</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">Research Intern — Unified Multimodal Vision Pretraining, DAMO Academy</div>
-          <div class="pub-authors">Beijing · Nov 2024 – Apr 2025</div>
-          <div class="pub-meta">Unified vision pretraining across 2D/3D/video modalities.</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">Research Intern — Vision-Language Models, AstraZeneca</div>
-          <div class="pub-authors">Cambridge, UK · Jul 2024 – Sep 2024</div>
-          <div class="pub-meta">Synthetic data for VLP; demonstrated synthetic pretraining beating SOTA real-data baselines.</div>
+        <div class="pub-card">
+          <img class="pub-thumb" src="assets/img/profile.png" alt="Multimodal Time-Series">
+          <div>
+            <h3 class="pub-title">Multimodal Time-Series Learning with Test-Time Enhancement</h3>
+            <p class="pub-authors"><strong>Che Liu</strong>, et al.</p>
+            <p class="pub-meta">ICML 2024</p>
+            <p class="pub-desc">Test-time boosted multimodal time-series models.</p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="grid-two">
-        <div class="card">
-          <div class="pub-title">Ph.D. in Multimodal Learning</div>
-          <div class="pub-authors">Imperial College London · Feb 2022 – 2026 (expected)</div>
-          <div class="pub-meta">Supervisors: Rossella Arcucci, Wenjia Bai</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">Visiting Ph.D.</div>
-          <div class="pub-authors">Technical University of Munich · Apr 2024 – Jun 2024</div>
-          <div class="pub-meta">Supervisor: Daniel Rückert</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">M.Sc. (Distinction), Computational Mechanics</div>
-          <div class="pub-authors">Swansea University · Sep 2019 – Sep 2021</div>
-          <div class="pub-meta">Formerly Erasmus Mundus Program</div>
-        </div>
-        <div class="card">
-          <div class="pub-title">B.Sc., Automotive Engineering</div>
-          <div class="pub-authors">Shanghai University of Engineering and Science · Sep 2016 – Jul 2018</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="card">
-        <div>Email: <a href="mailto:che.liu21@imperial.ac.uk">che.liu21@imperial.ac.uk</a></div>
-        <div>Google Scholar: <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Profile</a></div>
-        <div>LinkedIn: <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">Profile</a></div>
-        <div>GitHub: <a href="https://github.com/cheliu-computation" target="_blank" rel="noopener">cheliu-computation</a></div>
-        <div>CV: <a href="assets/files/cv.pdf">Download</a></div>
-      </div>
-    </section>
-
-    <div class="footer">
-      © 2025 Che Liu. Built with HTML/CSS and deployed on GitHub Pages.
     </div>
-  </main>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <h2>Experiences</h2>
+      <table class="exp-table">
+        <tr class="exp-row">
+          <td class="exp-cell" width="90%">
+            <b>X-humanoid</b>, Remote<br>
+            Visiting Researcher (Embodied VLM) — Apr 2025 to Present<br>
+            Leading VLM post-training (SFT + self-evolving RL) on large-scale video.
+          </td>
+        </tr>
+        <tr class="exp-row">
+          <td class="exp-cell" width="90%">
+            <b>StepFun</b>, Remote<br>
+            Visiting Researcher (OmniLLM) — May 2025 to Present<br>
+            Audio-visual-language SFT/RL and omni-capability benchmarks.
+          </td>
+        </tr>
+        <tr class="exp-row">
+          <td class="exp-cell" width="90%">
+            <b>DAMO Academy</b>, Beijing<br>
+            Research Intern — Nov 2024 to Apr 2025<br>
+            Unified multimodal vision pretraining across 2D/3D/video.
+          </td>
+        </tr>
+        <tr class="exp-row">
+          <td class="exp-cell" width="90%">
+            <b>AstraZeneca</b>, Cambridge, UK<br>
+            Research Intern (Vision-Language Models) — Jul 2024 to Sep 2024<br>
+            Synthetic-data VLP; showed synthetic pretraining can beat real-data baselines.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <table class="edu-table">
+        <tr class="edu-row">
+          <td class="edu-cell" width="90%">
+            <b>Imperial College London</b>, UK<br>
+            Ph.D. in Multimodal Learning — Feb 2022 to 2026 (expected)<br>
+            Supervisors: Rossella Arcucci, Wenjia Bai.
+          </td>
+        </tr>
+        <tr class="edu-row">
+          <td class="edu-cell" width="90%">
+            <b>Technical University of Munich</b>, Germany<br>
+            Visiting Ph.D. — Apr 2024 to Jun 2024<br>
+            Supervisor: Daniel Rückert.
+          </td>
+        </tr>
+        <tr class="edu-row">
+          <td class="edu-cell" width="90%">
+            <b>Swansea University</b>, UK<br>
+            M.Sc. (Distinction) in Computational Mechanics — Sep 2019 to Sep 2021.
+          </td>
+        </tr>
+        <tr class="edu-row">
+          <td class="edu-cell" width="90%">
+            <b>Shanghai University of Engineering and Science</b>, China<br>
+            B.Sc. in Automotive Engineering — Sep 2016 to Jul 2018.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div>
+        <a href="mailto:che.liu21@imperial.ac.uk">Email</a> ·
+        <a href="https://github.com/cheliu-computation" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+      <div style="margin-top: 8px;">
+        © 2025 Che Liu. Last updated: Dec 19, 2025.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 

@@ -203,12 +203,23 @@ a:hover {
 }
 
 .logo-img {
-  width: 110px;
-  height: 72px;
+  width: 220px;
+  height: 144px;
   padding: 8px 10px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: #f5f6fa;
+  box-shadow: var(--shadow);
+  object-fit: contain;
+}
+
+.logo-img-small {
+  width: 160px;
+  height: 96px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #f5f6fa;
   box-shadow: var(--shadow);
   object-fit: contain;
 }

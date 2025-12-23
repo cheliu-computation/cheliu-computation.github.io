@@ -135,6 +135,45 @@ a:hover {
   gap: 18px;
 }
 
+.pub-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.tab-btn {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--muted);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: var(--text);
+  border-color: #c7d2fe;
+  background: #eef2ff;
+}
+
+.tab-btn.active {
+  color: #ffffff;
+  background: linear-gradient(90deg, #1fb6ff, #2563eb);
+  border-color: transparent;
+  box-shadow: var(--shadow);
+}
+
+.pub-panel {
+  display: none;
+}
+
+.pub-panel.active {
+  display: block;
+}
+
 .pub-card {
   display: grid;
   grid-template-columns: 160px 1fr;

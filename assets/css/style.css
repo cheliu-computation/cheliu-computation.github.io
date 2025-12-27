@@ -176,7 +176,8 @@ a:hover {
 
 .pub-card {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  /* grid-template-columns: 160px 1fr; */
+  grid-template-columns: 1fr;
   gap: 16px;
   padding: 16px;
   background: var(--card);

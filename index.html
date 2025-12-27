@@ -15,7 +15,7 @@
         <div class="hero-text">
           <p>I am a researcher focusing on multimodal learning across 2D/3D vision, video, audio, language, and time-series data. I work on unified models for perception and generation, combining large-scale pretraining and RL for structured cross-modal reasoning.</p>
           <p>
-            Email: che.liu21@imperial.ac.uk
+            Email: <script>document.write('che.liu21' + '@' + 'imperial.ac.uk');</script>
           </p>
           <div class="button-row">
             <a class="btn" href="assets/files/cv.pdf">CV</a>
@@ -356,8 +356,13 @@
   <footer class="footer" id="contact">
     <div class="container">
       <div>
-        <a href="mailto:che.liu21@imperial.ac.uk">Email</a> ·
-        <a href="https://github.com/cheliu-computation" target="_blank" rel="noopener">GitHub</a> ·
+        <script>
+          const user = 'che.liu21';
+          const domain = 'imperial.ac.uk';
+          document.write(`<a href="mailto:${user}@${domain}">Email</a>`);
+        </script>
+        <noscript>Email</noscript> ·
+        <a href="https://www.linkedin.com/in/che-liu-32abcs7b1/" target="_blank" rel="noopener">LinkedIn</a> ·
         <a href="https://scholar.google.com/citations?hl=zh-CN&user=HED_458AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
       </div>
       <div style="margin-top: 8px;">

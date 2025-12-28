@@ -35,8 +35,8 @@ python3 -m http.server 8000
 
 ### Troubleshooting: `NoneType` length error (Temporal)
 
-Note: this is a support note preserved from a Temporal eval workflow question; if you are only using this repository as a personal homepage/portfolio template, you can ignore this section.
+This repository is primarily a static academic homepage template. The note below is preserved from a Temporal eval workflow support question; if you are only using this repository as a personal homepage/portfolio template, you can ignore this section.
 
-For teams running the evaluation workflow, `RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` from `EvalWorkflowCrud.get_workflow_status` means the database query returned no row/`None`, so `len(workflow_status)` fails. Ensure the workflow record exists. Add a guard before asserting (e.g., return an empty list when no result or check for `None` first).
+For teams running the evaluation workflow, `RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` from `EvalWorkflowCrud.get_workflow_status` happens when the database query returns no row/`None`. In that case `len(workflow_status)` fails. Ensure the workflow record exists and add a guard before asserting (e.g., return an empty list when no result or check for `None` first).
 
 **中文说明**：当 `EvalWorkflowCrud.get_workflow_status` 查询不到记录时会得到 `None`，调用 `len(None)` 会报错；先判空或补齐对应的 workflow 记录即可。

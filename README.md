@@ -33,4 +33,7 @@ python3 -m http.server 8000
 - Adjust colors and spacing in `assets/css/style.css`.
 - Add PDFs for CV or papers under `assets/files/` and link to them from the page.
 
+### Troubleshooting: `NoneType` length error (Temporal)
+
+If you hit `RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` coming from `EvalWorkflowCrud.get_workflow_status`, the database query returned `None`/no row, so `len(workflow_status)` raises. Ensure the workflow record exists and guard the call (e.g., return an empty list when no result or check for `None` before asserting). 这类错误通常是因为查询没结果，先判空或补齐对应的 workflow 记录即可。
 

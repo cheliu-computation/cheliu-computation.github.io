@@ -33,10 +33,6 @@ python3 -m http.server 8000
 - Adjust colors and spacing in `assets/css/style.css`.
 - Add PDFs for CV or papers under `assets/files/` and link to them from the page.
 
-### Troubleshooting: `NoneType` length error (Temporal)
+### Notes
 
-This repository is primarily a static academic homepage template. The note below is preserved from a Temporal eval workflow support question; if you are only using this repository as a personal homepage/portfolio template, you can ignore this section.
-
-For teams running the evaluation workflow, `RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` from `EvalWorkflowCrud.get_workflow_status` happens when the database query returns no row/`None`. In that case `len(workflow_status)` fails. Ensure the workflow record exists and add a guard before asserting (e.g., return an empty list when no result or check for `None` first).
-
-**中文说明**：当 `EvalWorkflowCrud.get_workflow_status` 查询不到记录时会得到 `None`，调用 `len(None)` 会报错；先判空或补齐对应的 workflow 记录即可。
+- Temporal eval workflow troubleshooting note (kept from a support request and not related to the homepage template): see [`TROUBLESHOOTING_TEMPORAL.md`](TROUBLESHOOTING_TEMPORAL.md). Feel free to ignore if you only need the homepage.

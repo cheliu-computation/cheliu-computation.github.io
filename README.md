@@ -33,4 +33,6 @@ python3 -m http.server 8000
 - Adjust colors and spacing in `assets/css/style.css`.
 - Add PDFs for CV or papers under `assets/files/` and link to them from the page.
 
+### Notes
 
+- Temporal eval workflow troubleshooting note: see [`TROUBLESHOOTING_TEMPORAL.md`](TROUBLESHOOTING_TEMPORAL.md). This note is kept from a support request and is not related to the homepage template. Feel free to ignore if you only need the homepage.

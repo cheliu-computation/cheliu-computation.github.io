@@ -35,4 +35,4 @@ python3 -m http.server 8000
 
 ### Notes
 
-- Temporal eval workflow troubleshooting note (kept from a support request and not related to the homepage template): see [`TROUBLESHOOTING_TEMPORAL.md`](TROUBLESHOOTING_TEMPORAL.md). Feel free to ignore if you only need the homepage.
+- Temporal eval workflow troubleshooting note: see [`TROUBLESHOOTING_TEMPORAL.md`](TROUBLESHOOTING_TEMPORAL.md). This note is kept from a support request and is not related to the homepage template. Feel free to ignore if you only need the homepage.

@@ -4,7 +4,7 @@ This note is preserved from a support question and is unrelated to the homepage 
 
 ## English
 
-`RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` from `EvalWorkflowCrud.get_workflow_status` occurs when the database query returns no row/`None`, so `len(workflow_status)` fails. Ensure the workflow record exists and add a guard before asserting (for example, return an empty list when no result or check for `None` first).
+`RETRY_STATE_MAXIMUM_ATTEMPTS_REACHED` with `object of type 'NoneType' has no len()` from `EvalWorkflowCrud.get_workflow_status` occurs when the database query returns no row/`None`, so `len(workflow_status)` fails. To fix it, ensure the workflow record exists and add a guard before the assertion (for example, return an empty list when no result or check for `None` first).
 
 ## 中文
 

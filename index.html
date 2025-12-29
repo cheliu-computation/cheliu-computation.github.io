@@ -9,13 +9,21 @@
 </head>
 <body>
   <section class="hero">
+    <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.95 16.95l.707.707M7.05 7.05l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+      </svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+    </button>
     <div class="container">
       <h1>Hello, I'm Che Liu</h1>
       <div class="hero-grid">
         <div class="hero-text">
           <p>I am a final-year PhD student at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">Imperial College London</a>, supervised by <a href="https://profiles.imperial.ac.uk/r.arcucci" target="_blank" rel="noopener">Prof. Rossella Arcucci</a> and <a href="https://profiles.imperial.ac.uk/w.bai" target="_blank" rel="noopener">Prof. Wenjia Bai</a>. I was a visiting student at <a href="https://www.tum.de/" target="_blank" rel="noopener">Technical University of Munich (TUM)</a>, advised by <a href="https://www.professoren.tum.de/rueckert-daniel" target="_blank" rel="noopener">Prof. Dr. Daniel Rückert</a>.</p>
-          <p>I have also conducted research at <a href="https://www.x-humanoid.com/" target="_blank" rel="noopener">X-Humanoid</a> on Embodied Understanding and Generation, <a href="https://stepfun.ai/research" target="_blank" rel="noopener">StepFun</a> on Omni-modal learning, <a href="https://damo.alibaba.com/research-areas?language=en" target="_blank" rel="noopener">DAMO Academy</a> on Unified Visual SSL, and <a href="https://www.astrazeneca.co.uk/" target="_blank" rel="noopener">AstraZeneca Cambridge</a> on VLM.</p>
-          <p>I am actively seeking a full-time research position based in the US, UK, or China, with a focus on multimodal learning, unified visual understanding and generation, and their applications.</p>
+          <p>I have also conducted research at <a href="https://www.x-humanoid.com/" target="_blank" rel="noopener">X-Humanoid</a> on Embodied Understanding and Generation, <a href="https://stepfun.ai/research" target="_blank" rel="noopener">StepFun</a> on Omni-modal learning, <a href="https://damo.alibaba.com/research-areas?language=en" target="_blank" rel="noopener">DAMO Academy</a> on Visual Pre-training, and <a href="https://www.astrazeneca.co.uk/" target="_blank" rel="noopener">AstraZeneca Cambridge</a> on VLM.</p>
+          <p class="text-red">I am actively seeking a full-time research position based in the US, UK, or China, with a focus on multimodal learning, unified visual understanding and generation, and their applications.</p>
           <p>
             Email: che.liu21 [at] imperial.ac.uk
           </p>
@@ -120,7 +128,7 @@
             <div>
               <h3 class="pub-title"><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/121770" target="_blank" rel="noopener">NOVA: A Benchmark for Anomaly Localization and Clinical Reasoning in Brain MRI</a></h3>
               <p class="pub-authors">Cosmin I. Bercea, <strong>C. Liu</strong>, et al.</p>
-              <p class="pub-meta"><strong>NeurIPS Dataset and Benchmark Track</strong> 2025 (Oral)</p>
+              <p class="pub-meta"><strong>NeurIPS Dataset and Benchmark Track</strong> 2025 <strong>(Oral)</strong></p>
             </div>
           </div>
           <div class="pub-card">
@@ -136,7 +144,7 @@
             <div>
               <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Liu_T3D_Advancing_3D_Medical_Vision-Language_Pre-training_by_Learning_Multi-View_Visual_ICCVW_2025_paper.html" target="_blank" rel="noopener">T3D: Advancing 3D Medical Vision-Language Pre-training by Learning Multi-View Visual Consistency</a></h3>
               <p class="pub-authors"><strong>C. Liu</strong>, et al.</p>
-              <p class="pub-meta"><strong>ICCV VLM3D Workshop</strong> 2025 (Oral)</p>
+              <p class="pub-meta"><strong>ICCV VLM3D Workshop</strong> 2025 <strong>(Oral)</strong></p>
             </div>
           </div>
           <div class="pub-card">
@@ -251,12 +259,12 @@
               <p class="pub-meta"><strong>IEEE TNNLS</strong> 2023</p>
           </div>
         </div>
-        <div class="pub-card">
+          <div class="pub-card">
             <!-- <img class="pub-thumb" src="assets/img/profile.png" alt="Frozen Language Model"> -->
           <div>
               <h3 class="pub-title"><a href="https://proceedings.mlr.press/v227/li24a.html" target="_blank" rel="noopener">Frozen Language Model Helps ECG Zero-Shot Learning</a></h3>
               <p class="pub-authors">J. Li†, <strong>C. Liu†</strong>, et al.</p>
-              <p class="pub-meta"><strong>MIDL</strong> 2023 (Oral)</p>
+              <p class="pub-meta"><strong>MIDL</strong> 2023 <strong>(Oral)</strong></p>
             </div>
           </div>
         </div>
@@ -395,6 +403,32 @@
     tabButtons.forEach((btn) => {
       btn.addEventListener('mouseenter', () => activateTab(btn));
       btn.addEventListener('focus', () => activateTab(btn));
+    });
+
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      htmlElement.setAttribute('data-theme', savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      let newTheme;
+      
+      if (currentTheme) {
+        newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      } else {
+        // If no manual theme set, check system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        newTheme = prefersDark ? 'light' : 'dark';
+      }
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
     });
   </script>
 </body>
